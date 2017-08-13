@@ -13,25 +13,42 @@
 
 .the-grid {
   display: grid;
-  /*width: 1000px;
-  border: 1px solid #ededed;
-  margin: 0 auto;*/
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas:
     "title"
-    "skills-left"
-    "skills-right"
     "name"
-    "skills-title"
     "logo"
+    "skills-titles"
+    "skills-list-left"
+    "skills-list-right"
     "contact";
 }
 
+.title {
+  grid-area: title;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.skills-titles {
+  grid-area: skills-titles;
+  display: none;
+}
+
+img {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+  .main-area {
+    margin: 2em;
+  }
+
   .the-grid {
     display: grid;
     /*width: 1000px;
@@ -43,60 +60,66 @@
     grid-row-gap: 0px;
     grid-template-areas:
       "title title"
-      "skills-left skills-right"
+      "skills-list-left skills-list-right"
       "name name"
-      "skills-title skills-title"
+      "skills-titles skills-titles"
       "logo logo"
       "contact contact";
   }
 
+  .title {
+    grid-area: title;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  .skills-titles {
+    grid-area: skills-titles;
+    display: block;
+  }
+
+  img {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.title {
-  /* title */
-  grid-area: title;
-  font-size: 36px;
+@media only screen and (min-width: 911px) {
+  /* tablets and desktop */
+  .main-area {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 
-.skills-left {
-  /* left skills list */
-  grid-area: skills-left;
+.skills-list-left {
+  grid-area: skills-list-left;
 }
 
-.skills-right {
-  /* right skills list */
-  grid-area: skills-right;
+.skills-list-right {
+  grid-area: skills-list-right;
 }
 
 .name {
-  /* my name */
   grid-area: name;
   font-size: 36px;
   padding-bottom: 0px;
 }
 
-.skills-title {
-  /* skills title */
-  grid-area: skills-title;
-}
-
 .logo {
-  /* logo */
   grid-area: logo;
 }
 
 .contact {
-  /* contact info */
   grid-area: contact;
   text-align: left;
 }
 
-.bold {
-  font-weight: 700;
-}
-
-img {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+.skills-list-title {
+  text-decoration: underline;
+  /*font-weight: 700;*/
 }
