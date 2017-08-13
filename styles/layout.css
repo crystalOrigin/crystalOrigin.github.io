@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+body {
+  /*background: #282C34;*/
+  /*background: #E0E0E0;  */
+  /*background: thistle;  */
+  /*background: lightsteelblue;*/
+  /*background: lightslategray;  // #778899*/
+  background: #BBCCDD
+}
+
+.main-area {
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid #41444B;
+}
