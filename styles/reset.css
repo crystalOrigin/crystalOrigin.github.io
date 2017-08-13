@@ -46,6 +46,7 @@ template {
 
 a {
 	background-color: transparent;
+	color: inherit;
 }
 
 a:active,
@@ -75,6 +76,10 @@ mark {
 	background: #ff0;
 	color: #000;
 }
+
+/*p {
+  margin: 0px;
+}*/
 
 small {
 	font-size: 80%;
