@@ -21,7 +21,7 @@
     "title"
     "name"
     "logo"
-    "skills-titles"
+    "name-skills"
     "skills-list-left"
     "skills-list-right"
     "contact";
@@ -29,19 +29,53 @@
 
 .title {
   grid-area: title;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.1;
 }
 
-.skills-titles {
-  grid-area: skills-titles;
+.name {
+  grid-area: name;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+
+.name-skills {
+  grid-area: name-skills;
+  font-size: 18px;
   display: none;
+}
+
+.skills-list > .header {
+  text-decoration: underline;
+}
+
+.skills-list-left {
+  grid-area: skills-list-left;
+}
+
+.skills-list-right {
+  grid-area: skills-list-right;
+}
+
+body {
+  /* for skills-list */
+  font-size: 16px;
 }
 
 img {
   width: 100px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.contact {
+  grid-area: contact;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -62,20 +96,31 @@ img {
       "title title"
       "skills-list-left skills-list-right"
       "name name"
-      "skills-titles skills-titles"
+      "name-skills name-skills"
       "logo logo"
       "contact contact";
   }
 
   .title {
-    grid-area: title;
+    /*grid-area: title;*/
     font-size: 36px;
     line-height: 1.25;
   }
 
-  .skills-titles {
-    grid-area: skills-titles;
+  .name {
+    /*grid-area: name;*/
+    font-size: 24px;
+    /*padding-bottom: 0px;*/
+  }
+
+  .name-skills {
+    /*grid-area: name-skills;*/
     display: block;
+  }
+
+  body {
+  /* for skills-list */
+    font-size: 18px;
   }
 
   img {
@@ -94,32 +139,4 @@ img {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-}
-
-.skills-list-left {
-  grid-area: skills-list-left;
-}
-
-.skills-list-right {
-  grid-area: skills-list-right;
-}
-
-.name {
-  grid-area: name;
-  font-size: 36px;
-  padding-bottom: 0px;
-}
-
-.logo {
-  grid-area: logo;
-}
-
-.contact {
-  grid-area: contact;
-  text-align: left;
-}
-
-.skills-list-title {
-  text-decoration: underline;
-  /*font-weight: 700;*/
 }
