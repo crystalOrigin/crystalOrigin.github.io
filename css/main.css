@@ -27,6 +27,18 @@
     "contact";
 }
 
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-default {
+  background-color: inherit;
+}
+
+.navbar-nav>.active {
+  background-color: #444;
+}
+
 .title {
   grid-area: title;
   font-size: 24px;
