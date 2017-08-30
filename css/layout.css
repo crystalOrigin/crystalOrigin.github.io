@@ -13,8 +13,10 @@ body {
 
 .main-area {
   margin: 2em;
-  padding: 1em;
-  border: 1px solid #41444B;
+  padding: 0em 1em 1em 1em;
+  border-left: 1px solid chocolate;
+  border-right: 1px solid chocolate;
+  border-bottom: 1px solid chocolate;
 }
 
 /*.navbar-default {
