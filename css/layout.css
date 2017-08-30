@@ -3,16 +3,22 @@ Layouts
 --------------------------------------------------------------*/
 
 body {
-  /*background: #282C34;*/
+  background: goldenrod;
   /*background: #E0E0E0;  */
   /*background: thistle;  */
   /*background: lightsteelblue;*/
   /*background: lightslategray;  // #778899*/
-  background: #BBCCDD
+  /*background: #BBCCDD;*/
 }
 
 .main-area {
   margin: 2em;
-  padding: 1em;
-  border: 1px solid #41444B;
+  padding: 0em 1em 1em 1em;
+  border-left: 1px solid chocolate;
+  border-right: 1px solid chocolate;
+  border-bottom: 1px solid chocolate;
 }
+
+/*.navbar-default {
+  border: none;
+}*/
