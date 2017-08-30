@@ -19,24 +19,51 @@
   grid-row-gap: 0px;
   grid-template-areas:
     "title"
-    "name"
     "logo"
-    "name-skills"
     "skills-list-left"
     "skills-list-right"
     "contact";
+}
+    /*"name"*/
+    /*"name-skills"*/
+
+.navbar-default {
+  background-color: inherit;
+  border-color: chocolate;
 }
 
 .navbar-brand {
   font-size: 24px;
 }
 
-.navbar-default {
-  background-color: inherit;
+.navbar-default .navbar-brand {
+  color: black;
 }
 
-.navbar-nav>.active {
-  background-color: #444;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: black;
+  /*background-color: wheat;*/
+  background-color: chocolate;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: chocolate;
+  border-color: maroon;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: maroon;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: maroon;
 }
 
 .title {
@@ -46,6 +73,7 @@
 }
 
 .name {
+  display: none;
   grid-area: name;
   font-size: 24px;
   font-weight: bold;
@@ -124,7 +152,8 @@ img {
   }
 
   .name-skills {
-    display: block;
+    /*display: block;*/
+    display: none;
   }
 
   body {
