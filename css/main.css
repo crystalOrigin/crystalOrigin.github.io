@@ -10,6 +10,7 @@
 @import url('typography.css');
 @import url('masthead.css');
 @import url('boxes.css');
+@import url('past_work.css');
 
 .the-grid {
   display: grid;
@@ -21,15 +22,16 @@
     "title"
     "logo"
     "skills-list-left"
-    "skills-list-right"
-    "contact";
+    "skills-list-right";
 }
     /*"name"*/
     /*"name-skills"*/
 
 .navbar-default {
   background-color: inherit;
-  border-color: chocolate;
+  border-color: transparent;
+  border-bottom: 1px solid chocolate;
+  border-radius: 0px;
 }
 
 .navbar-brand {
@@ -137,8 +139,7 @@ img {
       "skills-list-left skills-list-right"
       "name name"
       "name-skills name-skills"
-      "logo logo"
-      "contact contact";
+      "logo logo";
   }
 
   .title {
