@@ -110,7 +110,7 @@ h3 {
   margin-bottom: 0px;*/
   font-size: 14px;
   background-color: goldenrod;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .name-skills {
@@ -146,6 +146,23 @@ img {
   text-align: left;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  .wrapper_heading_lined {
+    width: 68%;
+    height: 15px;
+  }
+
+  .heading_lined {
+    font-size: 18px;
+    /*padding: 0 10px;*/
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
   .main-area {
     margin: 2em;
@@ -173,10 +190,10 @@ img {
     font-size: 18px;
   }
 
-  .heading_lined {
+  /*.heading_lined {
     font-size: 24px;
     padding: 0 10px;
-  }
+  }*/
 
   h1, .title {
     font-size: 36px;
@@ -195,18 +212,12 @@ img {
   }
 
   .wrapper_heading_lined {
-    /*width: 75%;*/
+    width: 60%;
     height: 20px;
-    /*border-bottom: 1px solid maroon;*/
-    /*text-align: center;*/
   }
 
   .heading_lined {
-    /*display: inline-block;
-    position: relative;
-    margin-bottom: 0px;*/
     font-size: 24px;
-    /*background-color: goldenrod;*/
     padding: 0 10px;
   }
 
