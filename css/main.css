@@ -91,14 +91,14 @@ h2 {
 
 h3 {
   /* for skills-list */
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .wrapper_heading_lined {
   /*width: 80%;
   margin: auto;
   padding: 10px;*/
-  width: 60%;
+  width: 75%;
   height: 15px;
   border-bottom: 1px solid maroon;
   /*text-align: center;*/
@@ -108,7 +108,7 @@ h3 {
   /*display: inline-block;
   position: relative;
   margin-bottom: 0px;*/
-  font-size: 18px;
+  font-size: 14px;
   background-color: goldenrod;
   padding: 0 10px;
 }
