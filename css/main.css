@@ -12,6 +12,11 @@
 @import url('boxes.css');
 @import url('past_work.css');
 
+body {
+  /* for skills-list */
+  font-size: 16px;
+}
+
 .the-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -24,7 +29,6 @@
     "skills-list-left"
     "skills-list-right";
 }
-    /*"name"*/
     /*"name-skills"*/
 
 .navbar-default {
@@ -68,18 +72,45 @@
   border-color: maroon;
 }
 
-.title {
+h1 {
+  margin: 0px;
+}
+
+h1, .title {
   grid-area: title;
   font-size: 24px;
   line-height: 1.1;
 }
 
-.name {
-  display: none;
-  grid-area: name;
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 0px;
+h2 {
+  /* for skills-list */
+  font-size: 18px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+h3 {
+  /* for skills-list */
+  font-size: 16px;
+}
+
+.wrapper_heading_lined {
+  /*width: 80%;
+  margin: auto;
+  padding: 10px;*/
+  width: 60%;
+  height: 15px;
+  border-bottom: 1px solid maroon;
+  /*text-align: center;*/
+}
+
+.heading_lined {
+  /*display: inline-block;
+  position: relative;
+  margin-bottom: 0px;*/
+  font-size: 18px;
+  background-color: goldenrod;
+  padding: 0 10px;
 }
 
 .name-skills {
@@ -98,11 +129,6 @@
 
 .skills-list-right {
   grid-area: skills-list-right;
-}
-
-body {
-  /* for skills-list */
-  font-size: 16px;
 }
 
 img {
@@ -142,24 +168,51 @@ img {
       "logo logo";
   }
 
-  .title {
+  body {
+  /* for skills-list */
+    font-size: 18px;
+  }
+
+  .heading_lined {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  h1, .title {
     font-size: 36px;
     line-height: 1.25;
   }
 
-  .name {
+  h2 {
+    /* for skills-list */
     font-size: 24px;
-    /*padding-bottom: 0px;*/
+    /*margin-top: 0px;*/
+  }
+
+  h3 {
+    /* for skills-list */
+    font-size: 18px;
+  }
+
+  .wrapper_heading_lined {
+    /*width: 75%;*/
+    height: 20px;
+    /*border-bottom: 1px solid maroon;*/
+    /*text-align: center;*/
+  }
+
+  .heading_lined {
+    /*display: inline-block;
+    position: relative;
+    margin-bottom: 0px;*/
+    font-size: 24px;
+    /*background-color: goldenrod;*/
+    padding: 0 10px;
   }
 
   .name-skills {
     /*display: block;*/
     display: none;
-  }
-
-  body {
-  /* for skills-list */
-    font-size: 18px;
   }
 
   img {
