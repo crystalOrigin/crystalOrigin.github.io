@@ -11,14 +11,10 @@ body {
   /*background: #BBCCDD;*/
 }
 
-.main-area {
-  margin: 2em;
+.main-area, .main-area-pw {
+  margin: 1em 2em 1em 2em;
   padding: 0em 1em 1em 1em;
   border-left: 1px solid chocolate;
   border-right: 1px solid chocolate;
   border-bottom: 1px solid chocolate;
 }
-
-/*.navbar-default {
-  border: none;
-}*/

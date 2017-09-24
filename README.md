@@ -1,2 +1,2 @@
-# crystalOrigin.github.io
+# johnvs.github.io
 My personal website repo
