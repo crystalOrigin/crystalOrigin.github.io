@@ -145,6 +145,51 @@ img {
   margin-bottom: 10px;
 }
 
+.soc {
+  display: flex;
+  list-style: none;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0px;
+  text-align: center;
+}
+.soc li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.soc a, .soc svg {
+  display: block; 
+}
+.soc a {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+.soc svg {
+  height: 100%;
+  width: 100%; 
+}
+.soc em {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+}
+
+.github:hover, .linkedin:hover {
+  fill: black;
+  transition: fill 0.5s, transform 0.5s ease-out; 
+}
+
+.github, .linkedin {
+  fill: maroon; 
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   h3 {
     font-size: 16px;
@@ -168,7 +213,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .main-area, .main-area-pw {
-    margin: 2em;
+    margin: 2em, 2em, 1em, 2em;
   }
 
   .the-grid {
@@ -250,7 +295,12 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+  }
+  .soc {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
